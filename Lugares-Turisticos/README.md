@@ -1,39 +1,27 @@
-# Proyecto Frontend: Tarjetas de Lugares
+# AngularItems
 
-## Descripción del Proyecto
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
 
-Este proyecto frontend permite a los usuarios agregar y visualizar tarjetas de lugares. Cada tarjeta puede mostrar una imagen, un nombre, una descripción y etiquetas relacionadas. La aplicación está construida utilizando Angular y está diseñada para ser sencilla y fácil de usar.
+## Development server
 
-## Version del Proyecto
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-- **Angular CLI**: 18.1.3
-- **Node**: 22.4.1
-- **Gestor de Paquetes**: npm 10.8.1
-- **Sistema Operativo**: Windows 64 bits
-- **Bootstrap**: npm i bootstrap@5.3.3
-- **Bootstrap Icons**: npm i bootstrap-icons
+## Code scaffolding
 
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Componentes Principales
+## Build
 
-### Componente `AgregarLugarComponent`
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-Este componente permite a los usuarios agregar nuevos lugares a la lista.
+## Running unit tests
 
-### Componente `ElementoLugarComponent`
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-Este componente representa una tarjeta de lugar individual, mostrando los detalles del lugar y permitiendo marcarlo como visitado.
+## Running end-to-end tests
 
-### Componente `ListaLugaresComponent`
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-Este componente muestra la lista de todas las tarjetas de lugares agregadas por el usuario.
+## Further help
 
-## Servicios
-
-### `LugarService`
-
-Este servicio maneja la lógica de negocio relacionada con los lugares, como agregar nuevos lugares, listar todos los lugares y marcar un lugar como visitado.
-
-## Capturas de Pantalla
-![image](https://github.com/user-attachments/assets/f1b3f331-4d64-4195-bb2e-7eff0727504d)
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
