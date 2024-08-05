@@ -1,0 +1,35 @@
+<div class="container mt-5">
+    <form action="" class="form-add-place">
+        <div class="mb-3">
+            <label for="titulo" class="form-label">Titulo *</label>
+            <input type="text" class="form-control" id="titulo" placeholder="Escriba aqui" [(ngModel)]="titulo" [ngModelOptions]="{standalone: true}">
+          </div>
+          <div class="mb-3">
+            <label for="imagen" class="form-label">URL de la Imagen *</label>
+            <input type="text" class="form-control" id="imagen" placeholder="http://imagenes.com/img1.png" [(ngModel)]="url_imagen" [ngModelOptions]="{standalone: true}">
+          </div>
+          <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripcion </label>
+            <textarea class="form-control" id="descripcion" rows="3" maxlength="250" [(ngModel)]="descripcion" [ngModelOptions]="{standalone: true}"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="imagen" class="form-label">Categorias *</label>
+            @for (categoria of categorias; track $index) {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="{{categoria | lowercase }}" [(ngModel)]="categorias_datos[$index]" [ngModelOptions]="{standalone: true}">
+                    <label class="form-check-label" for="{{categoria | lowercase}}">
+                      {{ categoria }}
+                    </label>
+                  </div> 
+                
+            }
+            
+            <div class="mb-3 botones">
+                <a routerLink="/" class="btn btn-danger me-3">Cancelar</a>
+                <button class="btn btn-primary" (click)="agregarLugar()" >Agregar</button>
+            </div>
+
+          </div>
+
+    </form>
+</div>

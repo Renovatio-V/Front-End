@@ -1,0 +1,37 @@
+<div id="principal" class="card" >
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="{{item.imagen}}" alt="playa" class="img-fluid ">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h4 class="card-title">{{ item.nombre}} 
+                    @if (item.visitado) {
+                        <span><i class="bi bi-star-fill"></i></span>
+                    }
+                </h4>
+                <p class="card-text">
+                    @if (item.descripcion !== undefined ) {
+                        {{ item.descripcion }}
+                       
+                    }@else {
+                        No se encuentra informacion adicional de este lugar
+                    }
+                    </p>
+                <div class="card-text">
+                    @for (categoria of item.categorias; track $index) {
+                        <span class="badge bg-warning ">{{  categoria }}</span>
+                    }                    
+                </div>
+                <div class="opciones">
+                    @if (!item.visitado) {<button class="btn btn-success" (click)="marcarVisitado()">Visitado</button>}
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>  
+
+
+
+</div>

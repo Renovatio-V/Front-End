@@ -1,0 +1,23 @@
+#principal {    
+    margin: 10px;
+}
+.opciones {
+    text-align: end;
+}
+
+.badge {
+    margin-left: 5px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+img {
+    max-width: 275px;
+    margin: 10px;
+    height: fit-content;
+}
+i {
+    color: gold;
+}

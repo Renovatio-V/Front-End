@@ -1,0 +1,14 @@
+
+<div class="opciones">
+
+    <a routerLink="/agregar" class="btn btn-primary">Agregar</a>
+    
+</div>
+@if (lugares.length === 0) {
+    <h2>No hay Lugares Guardados en este momento...</h2>
+}@else {
+    @for (lugar of lugares; track lugar.nombre){
+        <app-elemento-lugar [item]="lugar"/>
+    }    
+}
+
