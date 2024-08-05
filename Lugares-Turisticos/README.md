@@ -4,12 +4,15 @@
 
 Este proyecto frontend permite a los usuarios agregar y visualizar tarjetas de lugares. Cada tarjeta puede mostrar una imagen, un nombre, una descripción y etiquetas relacionadas. La aplicación está construida utilizando Angular y está diseñada para ser sencilla y fácil de usar.
 
-## Requisitos del Sistema
+## Version del Proyecto
 
 - **Angular CLI**: 18.1.3
 - **Node**: 22.4.1
 - **Gestor de Paquetes**: npm 10.8.1
 - **Sistema Operativo**: Windows 64 bits
+- **Bootstrap**: npm i bootstrap@5.3.3
+- **Bootstrap Icons**: npm i bootstrap-icons
+
 
 ## Componentes Principales
 
