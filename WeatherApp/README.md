@@ -1,8 +1,40 @@
 # WeatherApp
-
-## Visualization
-
 ![image](https://github.com/user-attachments/assets/f9307571-dc80-4e0c-b75a-7d2f9f1d3082)
+
+## Overview
+
+The Weather App is a simple Angular application that fetches and displays real-time weather data for a specified city. The application utilizes the [OpenWeather API](https://rapidapi.com) available on RapidAPI to gather information such as:
+
+- Country
+- City
+- Minimum and Maximum Temperature
+- Wind Speed
+- Humidity
+
+## Features
+
+- **City and Country Information**: Displays the name of the city and its corresponding country.
+- **Temperature**: Shows the current temperature in both Celsius and Fahrenheit.
+- **Weather Conditions**: Displays the minimum and maximum temperatures, wind speed, and humidity.
+- **Day/Night Indicator**: Dynamically shows an icon for either day or night based on the temperature.
+
+## API Integration
+
+The app connects to the OpenWeather API through a simple GET request. Below is the method used to fetch the weather data:
+
+```typescript
+getWeatherData(cityName: string): Observable<WeatherData> {
+    const url = `${this.weatherApiBaseUrl}/city/${cityName}/ES`;
+    const headers = new HttpHeaders()
+      .set(this.XRapidAPIKeyHeaderName, this.XRapidAPIKeyHeaderValue)
+      .set(this.XRapidAPIHostHeaderName, this.XRapidAPIHostHeaderValue);
+
+    console.log(headers);
+    
+    return this.http.get<WeatherData>(url, { headers });
+}
+```
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
 
