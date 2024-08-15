@@ -1,0 +1,191 @@
+<!-- WEATHER API.COM -->
+<!-- <div class="container" *ngIf="weatherData">
+    <div class="upper-data">
+
+        <img src="day.png" *ngIf=" (weatherData. > 20">
+        <img src="night.png" *ngIf=" (weatherData.main.temp - 30)/2 < 20">
+
+        <div class="weather-data">
+            <div class="location">{{ weatherData.name }} - {{weatherData.sys.country}}</div>
+            <div class="temperature">{{ (weatherData.main.temp - 30) / 2 | number: '1.0-0'}} °C</div>
+            <div class="temperature-1">{{ weatherData.main.temp| number: '1.0-0'}} °F</div>
+        </div>
+
+    </div>
+
+    <div class="lower-data">
+        <div class="more-info-label">
+            Weather info
+        </div>
+        <div class="more-info-container">
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="cold.png" alt="">
+                    <span>min</span>
+                </div>
+                <div class="info-block-value">
+                    {{(weatherData.main.temp_min - 30)/ 2 | number: '1.0-1'}}°C
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="hot.png" alt="">
+                    <span>max</span>
+                </div>
+                <div class="info-block-value">
+                    {{(weatherData.main.temp_max -30)/ 2 | number: '1.0-1'}}°C
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="humidity.png" alt="">
+                    <span>humidity</span>
+                </div>
+                <div class="info-block-value">
+                    {{weatherData.main.humidity}}%
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="wind.png" alt="">
+                    <span>wind</span>
+                </div>
+                <div class="info-block-value">
+                    {{weatherData.wind.speed}} km/h
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  -->
+
+
+<!-- OPEN WEATHER API -->
+<!-- <div class="container" *ngIf="weatherData">
+    <div class="upper-data">
+
+        <img src="day.png" *ngIf=" (weatherData.main.temp - 30)/2 > 20">
+        <img src="night.png" *ngIf=" (weatherData.main.temp - 30)/2 < 20">
+
+        <div class="weather-data">
+            <div class="location">{{ weatherData.name }} - {{weatherData.sys.country}}</div>
+            <div class="temperature">{{ (weatherData.main.temp - 30) / 2 | number: '1.0-0'}} °C</div>
+            <div class="temperature-1">{{ weatherData.main.temp| number: '1.0-0'}} °F</div>
+        </div>
+
+    </div>
+
+    <div class="lower-data">
+        <div class="more-info-label">
+            Weather info
+        </div>
+        <div class="more-info-container">
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="cold.png" alt="">
+                    <span>min</span>
+                </div>
+                <div class="info-block-value">
+                    {{(weatherData.main.temp_min - 30)/ 2 | number: '1.0-1'}}°C
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="hot.png" alt="">
+                    <span>max</span>
+                </div>
+                <div class="info-block-value">
+                    {{(weatherData.main.temp_max -30)/ 2 | number: '1.0-1'}}°C
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="humidity.png" alt="">
+                    <span>humidity</span>
+                </div>
+                <div class="info-block-value">
+                    {{weatherData.main.humidity}}%
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="wind.png" alt="">
+                    <span>wind</span>
+                </div>
+                <div class="info-block-value">
+                    {{weatherData.wind.speed}} km/h
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+ 
+
+
+<div class="container">
+    <div class="upper-data">
+
+        <img src="day.png">
+        <img src="night.png" *ngIf="14 <= 15">
+
+        <div class="weather-data">
+            <div class="location">Bogota - CO</div>
+            <div class="temperature">15 °C</div>
+        </div>
+
+    </div>
+
+    <div class="lower-data">
+        <div class="more-info-label">
+            Weather info
+        </div>
+        <div class="more-info-container">
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="cold.png" alt="">
+                    <span>min</span>
+                </div>
+                <div class="info-block-value">
+                    10°C
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="hot.png" alt="">
+                    <span>max</span>
+                </div>
+                <div class="info-block-value">
+                    20°C
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="humidity.png" alt="">
+                    <span>humidity</span>
+                </div>
+                <div class="info-block-value">
+                    77%
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-block-label">
+                    <img src="wind.png" alt="">
+                    <span>wind</span>
+                </div>
+                <div class="info-block-value">
+                    11 km/h
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<router-outlet />
