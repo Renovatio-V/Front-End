@@ -1,5 +1,9 @@
 # WeatherApp
 
+## Visualization
+
+![image](https://github.com/user-attachments/assets/f9307571-dc80-4e0c-b75a-7d2f9f1d3082)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
 
 ## Development server
